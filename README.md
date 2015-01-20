@@ -26,3 +26,37 @@ Put - Update
 Delete - Destroy
 
 /search?{attribute-value pairs}
+
+###January 20
+####Rest
+* Architectuaral style for web services (by Roy Fielding) 
+  *Rest is an appriach to developing web services that mimics the design of the Web itself
+  * For each resources you can perform operations on it similar to the main operations of the HTTP Specs. 
+* Each resource can perform at least one of the following CRUD (create, read, update, delete) operations:
+  * Post --> Create
+    Get --> read
+    Put --> Update
+    Delete --> Delete
+
+Example: 
+  - GET /api/1.0/users (retrieves list of users) 
+  - GET /api/1.0/users (retrieve details of user 0)
+  - POST /api/1.0/users (create a new user) 
+  - DELETE /api/1.0/users/0 (Delete user 0) 
+  - GET /api/1.0/search?q=__tattersail__ (perform a search with the query __tattersail__)
+
+#####Discussion
+*Each operation may preduce a result
+*Post and Put methods typically send data
+  * Other formats are possible: HTML and XML (as opposed to JSON)
+* If request needs to be authenticated -- authentication data appears in HTTP headers
+
+  - GET /api/1.0/posts/0/comments/1 (Get the first comment on post 0)
+  - POST /api/1.0/posts/0/comments  (Create a new comment on post 0)
+
+#####Issues
+__Security__: How do you authenticate users?
+__Identity__: How are IDs assigned to resources?
+__Failure__: How do we handle failure situations?
+__Persistence__: How are resources stored?
+
