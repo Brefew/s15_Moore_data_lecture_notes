@@ -60,3 +60,5 @@ __Identity__: How are IDs assigned to resources?
 __Failure__: How do we handle failure situations?
 __Persistence__: How are resources stored?
 
+###January 27 Notes
+Lecture consisted of Instructor providing examples of code. 
