@@ -62,3 +62,15 @@ __Persistence__: How are resources stored?
 
 ###January 27 Notes
 Lecture consisted of Instructor providing examples of code. 
+
+###January 29 Notes
+#####Looking at Express
+* Express: Web app framework 
+  * Written in Javascript for use in Node.js
+* Makes easy to define endpoints of your web-based service.
+* Has features that allow to create website
+* Express is minimal framework. Augmented by node packages
+  * Wired in as Middleware
+
+__Example of web servece in Express__
+- 
