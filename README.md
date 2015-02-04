@@ -73,4 +73,29 @@ Lecture consisted of Instructor providing examples of code.
   * Wired in as Middleware
 
 __Example of web servece in Express__
-- 
+
+###February 2 Notes
+#####AngularJS
+* web-application framework written for Javascript
+  * implementation of model-view-controller in web browser
+    * easier to produce web clients 
+* Data bindings
+  * value of HTML tag associated with modal object
+    * when one changes, Angular updates other automatically
+* Controller 
+  * Define all state and methods accessed within section of page
+  * Can modularize web application and decompose data into small manageable chunks
+* Services 
+  * controllers come and go from page to page
+  * Service maintains state between invocations
+    * remain in place for the life of the application
+* Directive
+  * allow angular to integrate into HTML 
+    * can create reusable components that combine controller, data, and HTML
+* Injectable 
+  * Angular controller and services declare their dependences up front
+  * locate at run time and inject them into component that needs them
+* Modules
+  * primary way of packaging up a set of controllers into Angular application
+
+__Example code from teacher for rest of class__ 
