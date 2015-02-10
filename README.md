@@ -99,3 +99,18 @@ __Example of web servece in Express__
   * primary way of packaging up a set of controllers into Angular application
 
 __Example code from teacher for rest of class__ 
+
+###Notes from February 10
+#####Basic idea of requireJS
+* Load single javascript file: RequireJS
+* Point RequireJS at main.js
+  * all files loaded by RequireJS are loaded in parallel, executed in order of dependencies
+* Code is MUCH cleaner 
+
+#####IIFES
+* immediately invoked function expression
+
+#####Getting Data from Twitter
+__Make an account on twitter__ 
+__dev.twitter.com__
+__manage your apps__
