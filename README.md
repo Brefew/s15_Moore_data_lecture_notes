@@ -150,3 +150,4 @@ __manage your apps__
       * similar to Max ID request
       * However, doesn't need to define contract for subclasses
       * can implement all of required functionality directly 
+__EXAMPLE COOODE__
