@@ -114,3 +114,39 @@ __Example code from teacher for rest of class__
 __Make an account on twitter__ 
 __dev.twitter.com__
 __manage your apps__
+
+###Notes for February 17
+
+#####Twitter Data Collection Framework
+* High Level of framework 
+  * Core <-- Request <-- Helpers 
+    v
+* Standardized Constructor
+  * Expects an args hash with up to 3 entries: 
+    * params, data, and log
+  * sets the contract required by all sub-classes
+* Contracts 
+  * Interfaces used in statically-typed languages
+  * Improvise in dynamically-typed languages 
+    * if a subclass fails to implement on of these methods: __BOOM__
+  * TwitterRequest has public collect method that yields collected data to the caller
+  * Subclasses __must__ provide implementations of
+    * url, request_name, twitter_endpoint, and success
+  * __may__ provide implementations of: 
+    * error, authorization, options, make_request, and collect
+  * Params and Props
+    * two new features in Params helper:
+      * control if parameter is included in request
+      * display parameters being sent with a request
+  * Rates helper invokes a twitter endpoint to get the apps current set of rate limits
+    * these rates are stored in a class variable so they are shared across all TwitterRequest instances created by an app
+    * These global rates are only refreshed when needed
+  * Types of requests:
+    * MaxIdRequest
+      * subclass for endpoints that need to traverse timelines with max_id param
+      * defines new construct of:
+        * init_condition, condition, and update_condition
+    * CursorRequest 
+      * similar to Max ID request
+      * However, doesn't need to define contract for subclasses
+      * can implement all of required functionality directly 
