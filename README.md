@@ -151,3 +151,37 @@ __manage your apps__
       * However, doesn't need to define contract for subclasses
       * can implement all of required functionality directly 
 __EXAMPLE COOODE__
+
+###Notes for Febrary 24
+#####CouchDB
+* NoSQL database
+* Document Database
+* Implemented in Erlang.
+  * used in telecommunications. Built to support massive concurrency, fault tolerance, and support for distributed sys.
+* Document databases: self-contained data
+* CouchDB stores docs that contain everything needed by app 
+* No schema enforced 
+  * allows for natural modelling/attributes can contain embedded documents
+
+#####CAP Theorem 
+* Issues when designing a distributed system:
+  * consistency
+  * availablility
+  * partition tolerance
+* CAP theorem says "Pick any two".
+* picking 2 characteristics provides different capabilities
+  * Availability and Partition Tolerance: "Provides the ability to scale horizontally and always be available for requrests but can only guarantee eventual consistency"
+
+* CouchDB uses B-Tree storage engine: automatic sorting; allows searches, insertions, and deletions in log time
+* employs mapReduce over the B-tree to compute __views__ of the data allowing parallel and incremental computation
+* No locking
+* Validation: validation functions can be written in Javascript
+  * each update for a doc: proposed change passed to validation function
+  * this function chooses to approve or deny update
+  * can reduce work on client and ensure bad client cannot maliciously insert bad data
+* incremental replication
+  * can choose to synch data b/w 2 servers
+  * once replication is done, each copy is independent
+* Merge Conflicts
+
+__Examples from instructor__
