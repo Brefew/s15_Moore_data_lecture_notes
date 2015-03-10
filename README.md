@@ -185,3 +185,18 @@ __EXAMPLE COOODE__
 * Merge Conflicts
 
 __Examples from instructor__
+
+###Was present for classes 3/3 and 3/5
+- Did not have computer. Took notes by hand.
+
+###Notes for 3/10
+* compound indexes
+* Sort order ....
+* Other Index Types
+  * Full-Text indexes
+  * Geospatial Indexes
+    * other out-of-scopes indexes
+#####Full-Text Indexes
+* Use a regular expression to find other instances of that phrase
+#####GeoSpacial Indexes
+* Mongo supports GeoJSON points, lines, and polygons
