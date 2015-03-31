@@ -200,3 +200,27 @@ __Examples from instructor__
 * Use a regular expression to find other instances of that phrase
 #####GeoSpacial Indexes
 * Mongo supports GeoJSON points, lines, and polygons
+
+###Notes for March 31 Lecture
+#####Neo4J Presentations
+
+* Graph based database for complex interactions
+  * Contains Nodes and Edges
+  * Database based on the interaction of these items. 
+  * NoSQL Graph Database, Whiteboard Friendly, Relationship focused, Java based
+* Visual representations with squares and arrows for vertices and edges. 
+  * Stores data as linked nodes. Relationships are edges 
+* Optimal for social network data--Faster for associative data sets.
+  * Every node and edge contains a property contained by the relationship as a Java object
+* Cheap to traverse relationships / More likely to run on single server than cluster / ACID properties need to cover nodes and edges to achieve consistency. 
+* Consistency and Transactions:
+  * Consistency: no waiting time between master and slaves while writing
+  * Transactions: Before changing nodes /r'ships we have to start transaction else it will throw Exception. Need to finish transaction by transaction.success() and transaction.finish()
+  * Availability: Provides replicated read-write slaves. 
+  * Query Features: Supported by Gremlin (language for traversing graphs). Also uses Lucene for full text search. 
+* Summary:
+  * Typless, schemeless, no constraints on data, fast look up! 
+  * Can't shard subgraphs, partition tolerant
+  * Flexible graph
+  * Master slave replication!
+
