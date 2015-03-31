@@ -224,3 +224,11 @@ __Examples from instructor__
   * Flexible graph
   * Master slave replication!
 
+#####HBase Notes
+* Hadoop Database - Can serve tables with billions of rows and millions of columns
+* HBase doesn't support fast individual record lookups, but provides fats lookups for larger tables
+* Low latency access to single rows from billions of records
+* Data stored in table schema
+  * HBase doesn't have fixed columns schema; defines own column families
+  * Built for wide tables
+  * Horizontally scalable
