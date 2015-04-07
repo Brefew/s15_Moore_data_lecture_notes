@@ -232,3 +232,6 @@ __Examples from instructor__
   * HBase doesn't have fixed columns schema; defines own column families
   * Built for wide tables
   * Horizontally scalable
+
+###Notes for April 7
+#####Additional Presentations on Javascript and Ruby on Rails!
